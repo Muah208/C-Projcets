@@ -7,7 +7,7 @@ int main(){
 
 // Var
     const float Th_Steel_Pipe = 0.02; //Thickness of Steel pipes Constant
-    const float Th_Concrete_Pipe = 0.2; //Thickness of Concrete pipes Constant
+    const float Th_Concrete_Pipe = 0%.2f; //Thickness of Concrete pipes Constant
     
     int Start_P; //start - End Choice
 
@@ -77,26 +77,26 @@ if (Start_P != 0)
        case 1:
              OT = Th_Steel_Pipe;
              printf("\nYour Type No is: %d", Type_No);
-             printf( " - Steel Pipes- Thickness of pipe (m) = %f",Th_Steel_Pipe); 
+             printf( " - Steel Pipes- Thickness of pipe (m) = %.2f",Th_Steel_Pipe); 
         break;
       case 2:
              OT = Th_Concrete_Pipe;
              printf("\nYour Type No is: %d", Type_No);
-             printf(" - Concrete Pipes - Thickness of pipe (m) = %f",Th_Concrete_Pipe);    
+             printf(" - Concrete Pipes - Thickness of pipe (m) = %.2f",Th_Concrete_Pipe);    
         break;  
         } 
       
   // To Calculate Outter dim of pipes according the type of pipes
 
     printf("\nWhat's Your Inner Dimeter Of Pipes will Use (in meter)?\n");
-    scanf("%f", &Dim_Pipe);
+    scanf("%.2f", &Dim_Pipe);
 
     Pipe_T_1 = OT * 2 + Dim_Pipe;
     Pipe_T_2 = OT * 2 + Dim_Pipe;
     Pipe_T_3 = OT * 2 + Dim_Pipe;
 
     printf("The outter Dim of all 3 pipes ot will be the same (in meter): \n");
-    printf("For Pipe 1: %f",Pipe_T_1),printf(" m\n"),printf("For Pipe 2: %f",Pipe_T_2),printf(" m\n"),printf("For Pipe 3: %f",Pipe_T_3),printf(" m\n");
+    printf("For Pipe 1: %.2f m\n",Pipe_T_1),printf("For Pipe 2: %.2f m\n",Pipe_T_2),printf("For Pipe 3: %.2f m\n",Pipe_T_3),printf(" m\n");
 
     printf("\nIf You Want to change the Exacvation section Press: Any Value \nOr you can escape by pressing : 0 \n");
     scanf("%d", &UserCond1);
@@ -109,13 +109,13 @@ if (Start_P != 0)
           printf("             ___ LX0 ___ (Pipe_T_1) ___ X12 ___ (Pipe_T_2)___ X23 ___ (Pipe_T_3)___ RX0 ___ \n");
           
           // Change of Ex section Values
-          printf("\n1-LX1 = %f", LX1),printf("\n2-HL1 = %f", HL1),printf("\n3-LX0 = %f", LX0);
-          printf("\n4-Pipe_T_1 = %f", Pipe_T_1);
-          printf("\n5-X12 = %f", X12);
-          printf("\n6-Pipe_T_2 = %f", Pipe_T_2);
-          printf("\n7-X23 = %f", X23);
-          printf("\n8-Pipe_T_3 = %f", Pipe_T_3);
-          printf("\n9-RX0 = %f", RX0),printf("\n10-HR1 = %f", HR1),printf("\n11-RX1 = %f", RX1);
+          printf("\n1-LX1 = %.2f", LX1),printf("\n2-HL1 = %.2f", HL1),printf("\n3-LX0 = %.2f", LX0);
+          printf("\n4-Pipe_T_1 = %.2f", Pipe_T_1);
+          printf("\n5-X12 = %.2f", X12);
+          printf("\n6-Pipe_T_2 = %.2f", Pipe_T_2);
+          printf("\n7-X23 = %.2f", X23);
+          printf("\n8-Pipe_T_3 = %.2f", Pipe_T_3);
+          printf("\n9-RX0 = %.2f", RX0),printf("\n10-HR1 = %.2f", HR1),printf("\n11-RX1 = %.2f", RX1);
           printf("\n____If you want to change any value just input the list number of var____");
           printf("\n____If you want to go on Just Press: 0____\n");
           scanf(" %d", &User_Cond2);
@@ -126,53 +126,53 @@ if (Start_P != 0)
           switch (User_Cond2){
             case 1:
             printf("\n____Please Enter the new value (in Meter) of LX1: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             LX1 = New_Value;
             break;
 
             case 2:
             printf("\n____Please Enter the new value (in Meter) of HL1: \n");
             printf("\n____Know that HL1 = HR1 ____\n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             HL1 = New_Value;
             HR1 = HL1;
             break;
 
             case 3:
             printf("\n____Please Enter the new value (in Meter) of LX0: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             LX0 = New_Value;
             break;
 
             case 5:
             printf("\n____Please Enter the new value (in Meter) of X12: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             X12 = New_Value;
             break;
 
             case 7:
             printf("\n____Please Enter the new value (in Meter) of X23: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             X23 = New_Value;
             break;
 
             case 9:
             printf("\n____Please Enter the new value (in Meter) of RX0: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             RX0 = New_Value;
             break;
 
             case 10:
             printf("\n____Please Enter the new value (in Meter) of HR1: \n");
             printf("\n____Know that HL1 = HR1 ____\n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             HR1 = New_Value;
             HL1 = HR1;
             break;
 
             case 11:
             printf("\n____Please Enter the new value (in Meter) of RX1: \n");
-            scanf("%f", &New_Value);
+            scanf("%.2f", &New_Value);
             RX1 = New_Value;
             break;
 
@@ -194,13 +194,13 @@ if (Start_P != 0)
           printf("             ___ LX0 ___ (Pipe_T_1) ___ X12 ___ (Pipe_T_2)___ X23 ___ (Pipe_T_3)___ RX0 ___ \n");
           
           // Change of Ex section Values
-          printf("\n1-LX1 = %f", LX1),printf("\n2-HL1 = %f", HL1),printf("\n3-LX0 = %f", LX0);
-          printf("\n4-Pipe_T_1 = %f", Pipe_T_1);
-          printf("\n5-X12 = %f", X12);
-          printf("\n6-Pipe_T_2 = %f", Pipe_T_2);
-          printf("\n7-X23 = %f", X23);
-          printf("\n8-Pipe_T_3 = %f", Pipe_T_3);
-          printf("\n9-RX0 = %f", RX0),printf("\n10-HR1 = %f", HR1),printf("\n11-RX1 = %f", RX1);
+          printf("\n1-LX1 = %.2f", LX1),printf("\n2-HL1 = %.2f", HL1),printf("\n3-LX0 = %.2f", LX0);
+          printf("\n4-Pipe_T_1 = %.2f", Pipe_T_1);
+          printf("\n5-X12 = %.2f", X12);
+          printf("\n6-Pipe_T_2 = %.2f", Pipe_T_2);
+          printf("\n7-X23 = %.2f", X23);
+          printf("\n8-Pipe_T_3 = %.2f", Pipe_T_3);
+          printf("\n9-RX0 = %.2f", RX0),printf("\n10-HR1 = %.2f", HR1),printf("\n11-RX1 = %.2f", RX1);
           printf("\n____If you want to change any value just input the list number of var____");
           printf("\n____If you want to go on Just Press: 0____\n");
           scanf(" %d", &User_Cond2);
@@ -227,17 +227,17 @@ if (Start_P != 0)
            printf("\n");
 
            printf("\nPlease Enter your Natural Ground Level (in meter) - NGL: \n");
-           scanf("%f", &NGL);
+           scanf("%.2f", &NGL);
         
            printf("\nPlease Enter your Excavation Level (in meter) - ExL: \n");
-           scanf("%f", &ExL);
+           scanf("%.2f", &ExL);
 
            TOD = NGL - ExL;
 
-           printf("\nNGL: %f", NGL);
-           printf("\nExL: %f", ExL);
-           printf("\nTota Depth (m): %f", TOD);
-           printf("\nThe Maximum Heigth of Ex (m): %f", HL1);
+           printf("\nNGL: %.2f", NGL);
+           printf("\nExL: %.2f", ExL);
+           printf("\nTota Depth (m): %.2f", TOD);
+           printf("\nThe Maximum Heigth of Ex (m): %.2f", HL1);
            HMax = HL1;
            if (TOD > HMax || TOD < 0)
            {
@@ -263,16 +263,16 @@ if (Start_P != 0)
               printf("\n");
               
               printf("\nPlease Enter anther value of Natural Ground Level (in meter) - NGL: \n");
-              scanf("%f", &NGL);
+              scanf("%.2f", &NGL);
       
               printf("\nPlease Enter anther value of Excavation Level (in meter) - ExL: \n");
-              scanf("%f", &ExL);
+              scanf("%.2f", &ExL);
               
               TOD = NGL - ExL;
 
-              printf("\nNGL: %f", NGL);
-              printf("\nExL: %f", ExL);
-              printf("\nTota Depth (m): %f", TOD);
+              printf("\nNGL: %.2f", NGL);
+              printf("\nExL: %.2f", ExL);
+              printf("\nTota Depth (m): %.2f", TOD);
 
             }while ( HMax > TOD > 0);
            }
@@ -285,33 +285,33 @@ if (Start_P != 0)
     
 
     printf("\n");
-    printf("___ "),printf("%f",LX1),printf(" ___                                                                                                   ___ "),printf("%f",RX1),printf(" ___\n");
-    printf("                 \\ "),printf("%f",HL1),printf("                                                                              "),printf("%f",HR1),printf(" /\n");
-    printf("                   ___ "),printf("%f",LX0),printf(" ___ "),printf("%f",Pipe_T_1),printf(" ___ "),printf("%f",X12),printf(" ___ "),printf("%f",Pipe_T_2),printf("___ "),printf("%f",X23),printf(" ___ "),printf("%f",Pipe_T_3),printf("___ "),printf("%f",RX0),printf(" ___ \n");
+    printf("___ "),printf("%.2f",LX1),printf(" ___                                                                                                   ___ "),printf("%.2f",RX1),printf(" ___\n");
+    printf("                 \\ "),printf("%.2f",HL1),printf("                                                                              "),printf("%.2f",HR1),printf(" /\n");
+    printf("                   ___ "),printf("%.2f",LX0),printf(" ___ "),printf("%.2f",Pipe_T_1),printf(" ___ "),printf("%.2f",X12),printf(" ___ "),printf("%.2f",Pipe_T_2),printf("___ "),printf("%.2f",X23),printf(" ___ "),printf("%.2f",Pipe_T_3),printf("___ "),printf("%.2f",RX0),printf(" ___ \n");
 
     printf("\n");
-    printf("\n_______________________________ Natural Ground Level ("),printf("%f",NGL),printf(")  _______________________________\n");
+    printf("\n_______________________________ Natural Ground Level ("),printf("%.2f",NGL),printf(")  _______________________________\n");
     printf("                                           /\\ \n");
     printf("                                           || \n");
     printf("                                           || \n");
     printf("                                           || \n");
-    printf("____________________________________ Total Depth ("),printf("%f",TOD),printf(")  _____________________________________\n");
+    printf("____________________________________ Total Depth ("),printf("%.2f",TOD),printf(")  _____________________________________\n");
     printf("                                           || \n");
     printf("                                           || \n");
     printf("                                           || \n");
     printf("                                          \\/  \n");
-    printf("_________________________________ Excavation Level ("),printf("%f",ExL),printf(")  _________________________________\n");
+    printf("_________________________________ Excavation Level ("),printf("%.2f",ExL),printf(")  _________________________________\n");
     printf("\n");
               
     printf("\n______________________________________________________________\n");
     printf("\n");
-    printf("\n____Total Width at Ex Level: %f", TOW_EX);
+    printf("\n____Total Width at Ex Level: %.2f", TOW_EX);
     printf(" m");
-    printf("\n____Maximum Hieght in Ex Section: %f", HMax);
+    printf("\n____Maximum Hieght in Ex Section: %.2f", HMax);
     printf(" m");
-    printf("\n____Ex width at total depth from Ex level: %f", EX_Width);
+    printf("\n____Ex width at total depth from Ex level: %.2f", EX_Width);
     printf(" m");
-    printf("\n____The section area is: %f", EX_Area);
+    printf("\n____The section area is: %.2f", EX_Area);
     printf(" m2\n");
 
     printf("\n**** Thank You for using Ex section area calculate By: Eng.Muhammad Osama ****");
